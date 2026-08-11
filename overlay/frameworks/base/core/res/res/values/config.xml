@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Device-specific framework config overrides for Benesse TAB-A03-BS.
+-->
+<resources>
+    <!-- Wired headset/headphone jack detection.
+
+         This device has no /sys/class/switch/h2w (nor any extcon class); the kernel
+         reports jack insertion only through input devices: "map asoc Headset" and
+         "map asoc Hook", both of which advertise EV_SW SW_HEADPHONE_INSERT and
+         SW_MICROPHONE_INSERT (confirmed with `getevent -pl`, and EventHub already
+         binds them, since `dumpsys input` shows a Switch Input Mapper for each).
+         config_useDevInputEventForAudioJack defaults to false, in which case
+         WiredAccessoryManager only watches the switch class that does not exist here,
+         so plugging in earphones is never noticed and audio keeps going to the speaker.
+         Setting it true makes WiredAccessoryManager query InputManager for
+         SW_HEADPHONE_INSERT / SW_MICROPHONE_INSERT instead (see onSystemReady() in
+         services/core/java/com/android/server/WiredAccessoryManager.java).
+         Carried over from the CM 12.1 device tree, where this was already needed. -->
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
+</resources>
