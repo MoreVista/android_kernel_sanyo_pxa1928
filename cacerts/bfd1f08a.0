@@ -1,0 +1,79 @@
+-----BEGIN CERTIFICATE-----
+MIIDMTCCAhmgAwIBAgIUclCBSJcMdg3JcCZ+pPgIvsGVsIswDQYJKoZIhvcNAQEL
+BQAwJzElMCMGA1UEAwwcZW5kby1IUC1aMjQwLVNGRi1Xb3Jrc3RhdGlvbjAeFw0y
+NjA3MjAwOTA1NTVaFw0zNjA3MTcwOTA1NTVaMCcxJTAjBgNVBAMMHGVuZG8tSFAt
+WjI0MC1TRkYtV29ya3N0YXRpb24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQCLdnLjDlLd/4YxQc0/6PYJs1G6JM3Hs1NJWshYRhI4Osw+KaNjI26k7AQp
+RnlvG81aZU8RDniKc5pIgZneNZV/D6ND6v5Sfwh47PWrF5vrcUvylc8DR8s9H4z4
+6Kk2nuTc4T+Ry9Ee9IC0YMA2JJduNLflZdpoUvHq4oN+PG5lJS9Uh5ZA6o6rLLER
+aXbmvo8R1Evwm72LR0a/gMr8Qvl4f5kgK6xgA9cFTPbtsRnJsWxZ4AFO31WDYXd5
+bUxG4ek1c9l498V9EqCl1QdmukBJfn8zmE/I7ADTvSz40u70zxtvnK7rt8W7KXCT
+jQJi9bQevZvqPe0zTGcXqXQmKp6ZAgMBAAGjVTBTMAkGA1UdEwQCMAAwJwYDVR0R
+BCAwHoIcZW5kby1IUC1aMjQwLVNGRi1Xb3Jrc3RhdGlvbjAdBgNVHQ4EFgQUzgn8
+GYAnhbyW5Z8ZIicZkZEqdyQwDQYJKoZIhvcNAQELBQADggEBAE7GIi3RIU2IxJUi
+CbMSn4gSd0n7i87I9H8dlmZa4vyamDafEooZTL5P/oorRpiTeUXxQdaIl1L8fSlx
+M7g7vnK76qZ4mp9B+GZNQSAQUJrcSuP9U7YrYrMMev9vOb1p6ctMdzIkm/1B9Xe+
+lLBZ3/GX1B8AwXULqYz9ISLOsvIm3YRndJ5lbY1XYUx0SCLWGSOlSYIi+DF21wWY
+IRfCABOCdTqoq07jlmu/W51BROEjtUs5DdTqAKhZxA3Jk0gY4ouWY4gYbvquZGvZ
+PLkBB3pYPDi/eFb3THzjQ1raDwsFdFwG8n7tXLA7UcG3E2ksmaU+JfNKO43c21Dd
+wej2S14=
+-----END CERTIFICATE-----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            72:50:81:48:97:0c:76:0d:c9:70:26:7e:a4:f8:08:be:c1:95:b0:8b
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=endo-HP-Z240-SFF-Workstation
+        Validity
+            Not Before: Jul 20 09:05:55 2026 GMT
+            Not After : Jul 17 09:05:55 2036 GMT
+        Subject: CN=endo-HP-Z240-SFF-Workstation
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:8b:76:72:e3:0e:52:dd:ff:86:31:41:cd:3f:e8:
+                    f6:09:b3:51:ba:24:cd:c7:b3:53:49:5a:c8:58:46:
+                    12:38:3a:cc:3e:29:a3:63:23:6e:a4:ec:04:29:46:
+                    79:6f:1b:cd:5a:65:4f:11:0e:78:8a:73:9a:48:81:
+                    99:de:35:95:7f:0f:a3:43:ea:fe:52:7f:08:78:ec:
+                    f5:ab:17:9b:eb:71:4b:f2:95:cf:03:47:cb:3d:1f:
+                    8c:f8:e8:a9:36:9e:e4:dc:e1:3f:91:cb:d1:1e:f4:
+                    80:b4:60:c0:36:24:97:6e:34:b7:e5:65:da:68:52:
+                    f1:ea:e2:83:7e:3c:6e:65:25:2f:54:87:96:40:ea:
+                    8e:ab:2c:b1:11:69:76:e6:be:8f:11:d4:4b:f0:9b:
+                    bd:8b:47:46:bf:80:ca:fc:42:f9:78:7f:99:20:2b:
+                    ac:60:03:d7:05:4c:f6:ed:b1:19:c9:b1:6c:59:e0:
+                    01:4e:df:55:83:61:77:79:6d:4c:46:e1:e9:35:73:
+                    d9:78:f7:c5:7d:12:a0:a5:d5:07:66:ba:40:49:7e:
+                    7f:33:98:4f:c8:ec:00:d3:bd:2c:f8:d2:ee:f4:cf:
+                    1b:6f:9c:ae:eb:b7:c5:bb:29:70:93:8d:02:62:f5:
+                    b4:1e:bd:9b:ea:3d:ed:33:4c:67:17:a9:74:26:2a:
+                    9e:99
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Alternative Name: 
+                DNS:endo-HP-Z240-SFF-Workstation
+            X509v3 Subject Key Identifier: 
+                CE:09:FC:19:80:27:85:BC:96:E5:9F:19:22:27:19:91:91:2A:77:24
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        4e:c6:22:2d:d1:21:4d:88:c4:95:22:09:b3:12:9f:88:12:77:
+        49:fb:8b:ce:c8:f4:7f:1d:96:66:5a:e2:fc:9a:98:36:9f:12:
+        8a:19:4c:be:4f:fe:8a:2b:46:98:93:79:45:f1:41:d6:88:97:
+        52:fc:7d:29:71:33:b8:3b:be:72:bb:ea:a6:78:9a:9f:41:f8:
+        66:4d:41:20:10:50:9a:dc:4a:e3:fd:53:b6:2b:62:b3:0c:7a:
+        ff:6f:39:bd:69:e9:cb:4c:77:32:24:9b:fd:41:f5:77:be:94:
+        b0:59:df:f1:97:d4:1f:00:c1:75:0b:a9:8c:fd:21:22:ce:b2:
+        f2:26:dd:84:67:74:9e:65:6d:8d:57:61:4c:74:48:22:d6:19:
+        23:a5:49:82:22:f8:31:76:d7:05:98:21:17:c2:00:13:82:75:
+        3a:a8:ab:4e:e3:96:6b:bf:5b:9d:41:44:e1:23:b5:4b:39:0d:
+        d4:ea:00:a8:59:c4:0d:c9:93:48:18:e2:8b:96:63:88:18:6e:
+        fa:ae:64:6b:d9:3c:b9:01:07:7a:58:3c:38:bf:78:56:f7:4c:
+        7c:e3:43:5a:da:0f:0b:05:74:5c:06:f2:7e:ed:5c:b0:3b:51:
+        c1:b7:13:69:2c:99:a5:3e:25:f3:4a:3b:8d:dc:db:50:dd:c1:
+        e8:f6:4b:5e
+SHA1 Fingerprint=7A:5A:DC:38:A7:BA:67:58:A2:0B:2F:67:D4:CC:73:DA:B6:F9:0E:E8

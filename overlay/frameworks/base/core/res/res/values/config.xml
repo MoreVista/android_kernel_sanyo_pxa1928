@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Device-specific framework config overrides for Benesse TAB-A03-BS.
+-->
+<resources>
+    <!-- Wired headset/headphone jack detection.
+
+         This device has NO /sys/class/switch/h2w headset switch; the kernel
+         reports jack insertion only through an input device ("map asoc Headset",
+         EV_SW SW_HEADPHONE_INSERT / SW_MICROPHONE_INSERT). The framework default
+         for config_useDevInputEventForAudioJack is false, so WiredAccessoryManager
+         watches the (nonexistent) switch class and never sees the plug -> earphones
+         are not recognized. Set it true so WiredAccessoryManager / InputManagerService
+         use the input SW_HEADPHONE_INSERT events instead. -->
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
+</resources>

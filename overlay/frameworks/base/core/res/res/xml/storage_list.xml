@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TAB-A03-BS: internal emulated storage is primary (/storage/emulated/0),
+     external microSD (mmc1 = mmcblk1p1) is secondary. The CM default made
+     /storage/sdcard (USB) primary non-emulated, which crashes system_server:
+     "Failed to find storage device at /storage/emulated/0" in MountService. -->
+<StorageList xmlns:android="http://schemas.android.com/apk/res/android">
+    <storage
+        android:mountPoint="/storage/emulated"
+        android:storageDescription="@string/storage_internal"
+        android:emulated="true"
+        android:mtpReserve="100" />
+    <storage
+        android:mountPoint="/storage/sdcard1"
+        android:storageDescription="@string/storage_sd_card"
+        android:removable="true"
+        android:allowMassStorage="true"
+        android:maxFileSize="4096" />
+</StorageList>

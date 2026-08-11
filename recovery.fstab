@@ -1,0 +1,26 @@
+# by-name labels are DUPLICATED across the internal eMMC (mmcblk0) and an SD card
+# on the sister TAB-A03-BR, so by-name/{system,userdata,cache,...} resolve
+# non-deterministically and TWRP could operate on the wrong device. Pin everything
+# to the internal eMMC (mmcblk0). eMMC is mmc0 (sdhci-pxav3.2, the boot0/boot1/rpmb
+# controller).
+#
+# VERIFIED on the BS unit (SN 0M6P034608) 2026-07-26 via
+# `ls -l /dev/block/platform/soc.1/by-name/` + /proc/partitions: every p-number
+# below matches. eMMC total 15388672 KB; p16 system 1941504 KB, p17 cache
+# 1105920 KB, p18 userdata 12058624 KB.
+#
+# MMC host map on BS (NB: this corrects the note in twrp-build-tab-a03-br.md,
+# which had the SD slot on mmc2):
+#   mmc0 = sdhci-pxav3.2 = internal eMMC        -> mmcblk0
+#   mmc1 = sdhci-pxav3.0 = external microSD slot (empty when checked)
+#   mmc2 = sdhci-pxav3.1 = SDIO, WiFi (type=SDIO, mmc2:0001) -- NOT a card slot
+# SDIO claims no mmcblkN, so a card in mmc1 enumerates as mmcblk1 and
+# /external_sd below is right -- but this is inference, still untested with an
+# actual card inserted.
+/boot        emmc  /dev/block/mmcblk0p15
+/recovery    emmc  /dev/block/mmcblk0p7
+/system      ext4  /dev/block/mmcblk0p16
+/cache       ext4  /dev/block/mmcblk0p17
+/data        ext4  /dev/block/mmcblk0p18
+/misc        emmc  /dev/block/mmcblk0p10
+/external_sd vfat  /dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable

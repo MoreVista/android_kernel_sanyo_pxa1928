@@ -1,0 +1,14 @@
+# CM/AOSP recovery fstab (fs_mgr v2 format) for TAB-A03-BS.
+# The TWRP tree uses the v1-format recovery.fstab; CM's releasetools
+# (build/tools/releasetools/common.py LoadRecoveryFSTab) requires v2, so the
+# cm_ product points TARGET_RECOVERY_FSTAB here instead.
+# Partition numbers verified on the BS unit (SN 0M6P034608) 2026-07-26; eMMC only.
+#
+# <src>                  <mnt_point>   <type>  <mnt_flags>            <fs_mgr_flags>
+/dev/block/mmcblk0p16    /system       ext4    ro                     wait
+/dev/block/mmcblk0p17    /cache        ext4    noatime,nosuid,nodev   wait
+/dev/block/mmcblk0p18    /data         ext4    noatime,nosuid,nodev   wait
+/dev/block/mmcblk0p15    /boot         emmc    defaults               defaults
+/dev/block/mmcblk0p7     /recovery     emmc    defaults               defaults
+/dev/block/mmcblk0p10    /misc         emmc    defaults               defaults
+/dev/block/mmcblk1p1     /external_sd  vfat    defaults               voldmanaged=sdcard:auto
