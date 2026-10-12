@@ -1307,17 +1307,23 @@
 			dsi-v-back-porch = <3>;
 			dsi-v-sync-width = <10>;
 		};
-		video_mode_p {//noise
+		video_mode_p {//noise -- porches replaced with video_mode_spi's
+			/* (same panel, same resolution, only the DSI-bus
+			 * control path differs) since the vendor tree itself
+			 * flags this node's original timing as producing
+			 * visible noise; the init command sequence chosen by
+			 * the live micom GPIO read is untouched.
+			 */
 			dsi-panel-xres = <800>;
 			dsi-panel-yres = <1280>;
 			dsi-panel-width = <136>;	/* FIXME: active area in mm */
 			dsi-panel-height = <217>;	/* FIXME: active area in mm */
-			dsi-h-front-porch = <92>;
-			dsi-h-back-porch = <80>;
-			dsi-h-sync-width = <2>;
-			dsi-v-front-porch = <18>;
-			dsi-v-back-porch = <21>;
-			dsi-v-sync-width = <2>;
+			dsi-h-front-porch = <60>;
+			dsi-h-back-porch = <60>;
+			dsi-h-sync-width = <20>;
+			dsi-v-front-porch = <21>;
+			dsi-v-back-porch = <16>;
+			dsi-v-sync-width = <1>;
 		};
 		video_mode_spi {// spi,micom
 			dsi-panel-xres = <800>;
